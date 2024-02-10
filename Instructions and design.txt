@@ -1,0 +1,27 @@
+STEPS TO RUN THE SCRIPT
+
+1. To run the script you just have to paste the test images directly into the input folder, multiple images can be pasted.
+2. The results are saved in the output folder in a directory with the timestamp of the execution to reduce any confusions while making any changes or testing.
+3. Once the execution is completed the TOTAL NUMBER OF FIGURES DETECTED is diplayed at the TERMINAL.
+4. And the result images are saved in the output/yyyy-mm-dd hh-mm-ss/ folder.
+
+
+DESIGN of the CODE:
+1. The utils.py contains 2 classes named as Detect and LoadDataset.
+2. Class Detect contains all the code components responsible for the image operations, which are as follows:
+	a. when the class is initiated, it requires the Image path of the image for further steps.
+	b. The code loads the image in BGR as well as Grayscale format.
+	c. detect_contours method draws the figures which are identified in the image.
+	d. detect_corner detects all corner points which the code can identify.
+	e. show_edge_length draws the distance for all the edges of the figures using the 2D distance formula
+	f. to get the final results, use the get_results method to get the final result image along with the number of FIGURES detected.
+
+3. Class LoadDataset handles the file operations of the script, from loading the images, to saving the images, as well as creating the directory for saving the images.
+
+
+
+
+
+
+Submitted By -
+Aditya Dubey
